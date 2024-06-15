@@ -1,0 +1,44 @@
+window:
+  padding:
+    x: 10
+    y: 10
+
+cursor:
+  style:
+    shape: Beam
+    blinking: Off
+
+
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+
+  bold:
+    family: JetBrains Mono
+    style: Bold
+
+  italic:
+    family: JetBrains Mono
+    style: Italic
+
+  bold_italic:
+    family: JetBrains Mono
+    style: Bold Italic
+
+  size: 12
+
+draw_bold_text_with_bright_colors: true
+live_config_reload: true
+import:
+  - ~/.config/alacritty/gruvbox-dark.yml
+
+
+key_bindings:
+  - { key: Return,   mods: Super|Shift, action: SpawnNewInstance }
+  - { key: Key0,     mods: Control, action: ResetFontSize    }
+  - { key: Numpad0,     mods: Control, action: ResetFontSize    }
+  - { key: NumpadAdd,      mods: Control, action: IncreaseFontSize }
+  - { key: NumpadSubtract, mods: Control, action: DecreaseFontSize }
+  - { key: PageUp,  action: ScrollPageUp }
+  - { key: PageDown, action: ScrollPageDown }
